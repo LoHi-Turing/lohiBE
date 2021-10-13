@@ -1,0 +1,21 @@
+language: ruby
+rvm:
+  - 2.7.2
+before_install:
+  - gem install bundler
+addons:
+  postgresql: 9.6
+script:
+  - bundle exec rails db:{create,migrate} RAILS_ENV=test
+  - bundle exec rspec
+env:
+  global:
+    secure: vqYrZrBnzjloHxLyZRlnAxe49NvotLZClx+EdnKt5C2MTkxqSdxZClptMnAZbw1wWBDWPcRBbYuZhNYzsmYW7CVjNIxAyB4lwxrwicwJE4A8uX4qQTnsDyvbZxlk7mzSeM23hXAoEw7ZpEagk1MCPPKJXmErD9bU6Pybl8ZnRnTFeYhd0NFTjIb6b0WSN2J1pgVxAK8+1eYMYwfKHRNUqxuN1bGmI/oSFCU1nxZsfJhKpYK63dN/A+xf3+PLdRHpDJQw1RMC3WHToe5a6aIqevcX4Ydg9Gvd3e5fB/We2aAEmhjet3AtRREzJ09oEXijIUQL99KHcIInNMH8TI2MrX9hGLpZ2dp1cJUHbDd479IVpqfx56fcFGQf2rOHtqt4g266SS6oewkT09BsIVS8HSN3m+6anKbuqCNaB+hTxIXbPL8efibnBd0+dNYZohxfcIzkRLI5B5q03lryATJeonEwBJEIq5UY9sVMHt2Rj4K1ezLsjaR6n2wTwNXQ9hG685/0YO8D8zaYyoY2TAII7SJRdzi30eFA6WhG5w4sZ+QuyJ326fcl3yoOHylzjhv+NdcHWKQm2ThRZ/aNcEkZx/VnuHuTRnMfQsvAB/R/tnbm6FQsk67C+0a48lMY6YX0Rc62Bn6wELHvsOL+gTLCcnZ7C3dUaY7YwFy2sCMnw/g=
+deploy:
+  provider: heroku
+  api_key:
+    secure: M5jTmKr7JHAffsyNZ98OH8qQJK2oKVHnnWlvf29EP5MyRUp1sV0Hf7rAiFeArTJzpCfsi0IS4hk7dTBwUYXsyQ3vbnJldzj1Wy7lVDTEM7yjfLJgu2ohN+oVsDPWsMbcoNoS7r1nqDm28K5ZVIg9OwyFMzDYxFai/aU58GNE6rPOCQld+hRJf1i6CwjM2j5hHj5AB8+NIpOJ/MhkTmyScHWtB3cBPuqVXPO/PGDy7A66tlSeMcn7B5+Hd6V5vRcKcrYa81yiT5FnYoiqqQrSnhXRZKMWzeD7EKbGC96FinLtjiXLB0kU7/NiMVcWbLBN3/88hnbybfTKhARbshpWMz+nRdx29hxg84FwweuEJTmDk4nmFy2sUg+R9E+iGPpFgYpIELrZUpRgCLRoVAiYgTrYJDMXJVq1zbVnLMa33GkeCae1Nhn+wsIk9KEWi3R0gUA2NSPwlUqxlp1/iCv0JaRo06rXZLo9JjejwFmB0ujvyAOSxqOrmdHlwS2hTsXwEMPV+bi2mPX0H7JCpVhrNEIl7jxLaZcN2divINBJqaJX6fmHAymzxNukfz62EK/MAQYqjegkGbKiqJczQS/dNlJF5Kl2Jfv829VGr9wg+0QNWpnGh6e3l9YUfPq/zd5/+iRwzp+/ILisW23miLVhzAXTQx9hq7jHZh+onCumxg4=
+  app: lohi-api
+  on:
+    branch: main
+  run: rails db:migrate
