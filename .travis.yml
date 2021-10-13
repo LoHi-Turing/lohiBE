@@ -1,0 +1,13 @@
+language: ruby
+rvm:
+  - 2.7.2
+before_install:
+  - gem install bundler
+addons:
+  postgresql: 9.6
+script:
+  - bundle exec rails db:{create,migrate} RAILS_ENV=test
+  - bundle exec rspec
+env:
+  global:
+    - secure: vqYrZrBnzjloHxLyZRlnAxe49NvotLZClx+EdnKt5C2MTkxqSdxZClptMnAZbw1wWBDWPcRBbYuZhNYzsmYW7CVjNIxAyB4lwxrwicwJE4A8uX4qQTnsDyvbZxlk7mzSeM23hXAoEw7ZpEagk1MCPPKJXmErD9bU6Pybl8ZnRnTFeYhd0NFTjIb6b0WSN2J1pgVxAK8+1eYMYwfKHRNUqxuN1bGmI/oSFCU1nxZsfJhKpYK63dN/A+xf3+PLdRHpDJQw1RMC3WHToe5a6aIqevcX4Ydg9Gvd3e5fB/We2aAEmhjet3AtRREzJ09oEXijIUQL99KHcIInNMH8TI2MrX9hGLpZ2dp1cJUHbDd479IVpqfx56fcFGQf2rOHtqt4g266SS6oewkT09BsIVS8HSN3m+6anKbuqCNaB+hTxIXbPL8efibnBd0+dNYZohxfcIzkRLI5B5q03lryATJeonEwBJEIq5UY9sVMHt2Rj4K1ezLsjaR6n2wTwNXQ9hG685/0YO8D8zaYyoY2TAII7SJRdzi30eFA6WhG5w4sZ+QuyJ326fcl3yoOHylzjhv+NdcHWKQm2ThRZ/aNcEkZx/VnuHuTRnMfQsvAB/R/tnbm6FQsk67C+0a48lMY6YX0Rc62Bn6wELHvsOL+gTLCcnZ7C3dUaY7YwFy2sCMnw/g=
