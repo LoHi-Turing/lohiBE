@@ -26,4 +26,4 @@
 /config/application.yml
 
 /coverage
-/fixtures
+/fixtures/*
