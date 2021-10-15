@@ -3,10 +3,9 @@ require 'rails_helper'
 describe 'locations' do
   describe 'post request', :vcr do
     it 'can return elevation and humidity for a given location (valid)' do
-      loc_params = { location: "80030" }
-      headers = { "CONTENT_TYPE" => "application/json" }
+      loc = "80030"
 
-      post "/api/v1/location", headers: headers, params: JSON.generate(loc_params)
+      get "/api/v1/location?location=#{loc}"
 
       expect(response).to be_successful
 
@@ -27,14 +26,24 @@ describe 'locations' do
       expect(trip[:attributes][:location]).to eq("80030")
     end
 
-    # it 'can return elevation and humidity for a given location (valid)' do
-    #   loc_params = { location: "7" }
-    #   headers = { "CONTENT_TYPE" => "application/json" }
-    #
-    #   post "/api/v1/location", headers: headers, params: JSON.generate(loc_params)
-    #
-    #   expect(response).to_not be_successful
-    #   expect(response.status).to eq(404)
-    # end
+    it 'can return error for invalid location' do
+      loc = "7"
+
+      get "/api/v1/location?location=#{loc}"
+
+      expect(response).to_not be_successful
+      expect(response.status).to eq(404)
+
+      error = JSON.parse(response.body, symbolize_names: true)
+
+      expect(error).to be_a(Hash)
+      expect(error).to have_key(:errors)
+      expect(error[:errors]).to have_key(:status)
+      expect(error[:errors][:status]).to eq("Not Valid")
+      expect(error[:errors]).to have_key(:message)
+      expect(error[:errors][:message]).to eq("Location is not valid")
+      expect(error[:errors]).to have_key(:code)
+      expect(error[:errors][:code]).to eq(404)
+    end
   end
 end
