@@ -10,7 +10,7 @@ class ElevationService
     end
 
     def conn
-      Faraday.new(url: "https://api.open-elevation.com", ssl: false)
+      Faraday.new(url: "https://api.open-elevation.com", ssl: {verify: false})
     end
 
     def parse_json(result)
