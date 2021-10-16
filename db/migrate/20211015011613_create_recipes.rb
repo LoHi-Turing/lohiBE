@@ -2,7 +2,7 @@ class CreateRecipes < ActiveRecord::Migration[5.2]
   def change
     create_table :recipes do |t|
       t.string :title
-      t.string :description
+      t.text :description, array: true, default: []
       t.string :category
       t.string :cook_time
 

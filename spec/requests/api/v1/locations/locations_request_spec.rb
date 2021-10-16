@@ -1,7 +1,7 @@
 require 'rails_helper'
 
 describe 'locations' do
-  describe 'post request', :vcr do
+  describe 'get request', :vcr do
     it 'can return elevation and humidity for a given location (valid)' do
       loc = "80030"
 
@@ -24,6 +24,10 @@ describe 'locations' do
       expect(trip[:attributes]).to have_key(:location)
       expect(trip[:attributes][:location]).to be_a(String)
       expect(trip[:attributes][:location]).to eq("80030")
+      expect(trip[:attributes][:city]).to be_a(String)
+      expect(trip[:attributes][:city]).to eq("Westminster")
+      expect(trip[:attributes][:state]).to be_a(String)
+      expect(trip[:attributes][:state]).to eq("CO")
     end
 
     it 'can return error for invalid location' do
