@@ -4,7 +4,6 @@ banana_bread = Recipe.create(
   title: "Chocolate Chip Banana Bread",
   description: [
     "Preheat the oven to 350ºF. Prepare a 9x5 baking pan by lining it with parchment or foil and lightly spraying with nonstick spray.",
-    "Preheat the oven to 350ºF. Prepare a 9x5 loaf baking pan by lining it with parchment or foil and lightly spraying nonstick spray.",
     "Mash the bananas with a fork or whisk. Whisk in the sugar, egg, vanilla, and vegetable oil.",
     "Mix in the flour, baking powder, baking soda, cinnamon, and salt. The batter will be lumpy.",
     "Fold in the chocolate chips.",
