@@ -5,6 +5,9 @@ Rails.application.routes.draw do
     namespace :v1 do
       resources :location, only: (:index)
       resources :recipes, only: (:index)
+      resources :images, only: (:create)
     end
   end
+
+  post '/presigned_url', to: 'direct_upload#create'
 end

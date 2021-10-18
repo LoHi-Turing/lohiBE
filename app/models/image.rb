@@ -5,4 +5,10 @@ class Image < ApplicationRecord
 
   validates :title, presence: true
   validates :recipe_id, presence: true
+
+  def recipe_image_url
+    if recipe_image.attached?
+      recipe_image.blob.service_url
+    end
+  end
 end
