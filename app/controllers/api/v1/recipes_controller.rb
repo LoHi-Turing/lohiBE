@@ -4,8 +4,7 @@ class Api::V1::RecipesController < ApplicationController
     if params[:elevation].to_i < 5000
       render json: RecipeSerializer.new(recipes)
     else
-      adjusted_recipes = HighElevationFacade.adjust_recipe(recipes)
-      render json: RecipeHighSerializer.new(adjusted_recipes)
+      render json: RecipeHighSerializer.new(recipes)
     end
   end
 end
