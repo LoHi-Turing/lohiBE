@@ -44,7 +44,7 @@ describe 'recipes' do
         expect(recipe).to be_a(Hash)
         expect(recipe).to have_key(:id)
         expect(recipe).to have_key(:type)
-        expect(recipe[:type]).to eq("recipe")
+        expect(recipe[:type]).to eq("recipe_high")
         expect(recipe).to have_key(:attributes)
         expect(recipe[:attributes]).to be_a(Hash)
         expect(recipe[:attributes]).to have_key(:title)
