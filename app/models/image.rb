@@ -8,7 +8,7 @@ class Image < ApplicationRecord
 
   def recipe_image_url
     if recipe_image.attached?
-      recipe_image.blob.service_url
+      recipe_image.blob.service_url(expires_in: 1.week)
     end
   end
 end

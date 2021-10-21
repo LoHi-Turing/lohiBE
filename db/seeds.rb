@@ -48,3 +48,56 @@ fluffy_pan.ingredients.create(title: "Egg", quantity: "1", unit: "Large")
 fluffy_pan.ingredients.create(title: "Unsalted Butter", quantity: "2", unit: "tablespoons")
 fluffy_pan.ingredients.create(title: "Pure Vanilla Extract", quantity: "1", unit: "teaspoons")
 fluffy_pan.ingredients.create(title: "Canola Oil", quantity: "for cooking", unit: "")
+
+chocalate_chip_cookies = Recipe.create(
+  title: "chocolate chip cookies",
+  description: [
+    "Preheat oven to 375° F.",
+    "Combine flour, baking soda and salt in small bowl. Beat butter, granulated sugar, brown sugar and vanilla extract in large mixer bowl until creamy. Add eggs, one at a time, beating well after each addition. Gradually beat in flour mixture. Stir in morsels and nuts. Drop by rounded tablespoon onto ungreased baking sheets.",
+    "Bake for 9 to 11 minutes or until golden brown. Cool on baking sheets for 2 minutes; remove to wire racks to cool completely."
+  ],
+  category: "Cookies",
+  cook_time: "15 minutes"
+)
+
+chocalate_chip_cookies.ingredients.create(title: "All-Purpose Flour", quantity: "2.25", unit: "cups")
+chocalate_chip_cookies.ingredients.create(title: "Baking Soda", quantity: "1", unit: "teaspoons")
+chocalate_chip_cookies.ingredients.create(title: "Salt", quantity: "1", unit: "teaspoons")
+chocalate_chip_cookies.ingredients.create(title: "Butter (softened)", quantity: "1", unit: "cups")
+chocalate_chip_cookies.ingredients.create(title: "Granulated Sugar", quantity: ".75", unit: "cups")
+chocalate_chip_cookies.ingredients.create(title: "Brown Sugar (packed)", quantity: ".75", unit: "cups")
+chocalate_chip_cookies.ingredients.create(title: "Vanilla Extract", quantity: "1", unit: "teaspoons")
+chocalate_chip_cookies.ingredients.create(title: "Egg", quantity: "2", unit: "Large")
+chocalate_chip_cookies.ingredients.create(title: "Nestle Toll House Semi-Sweet Chocolate Morsels", quantity: "2", unit: "cups")
+chocalate_chip_cookies.ingredients.create(title: "Chopped Nuts", quantity: "1", unit: "cups")
+
+
+blueberry_muffin = Recipe.create(
+  title: "Jordan Marsh's Blueberry Muffins",
+  description: [
+    "Preheat the oven to 375.",
+    "Cream the butter and 1 1/4 cups sugar until light.",
+    "Add the eggs, one at a time, beating well after each addition. Add vanilla.",
+    "Sift together the flour, salt and baking powder, and add to the creamed mixture alternately with the milk.",
+    "Crush 1/2 cup blueberries with a fork, and mix into the batter. Fold in the remaining whole berries.",
+    "Line a 12 cup standard muffin tin with cupcake liners, and fill with batter. Sprinkle the 3 teaspoons sugar over the tops of the muffins, and bake at 375 degrees for about 30-35 minutes.",
+    "Remove muffins from tin and cool at least 30 minutes. Store, uncovered, or the muffins will be too moist the second day, if they last that long."
+  ],
+  category: "Muffin",
+  cook_time: "25-30 minutes"
+)
+
+blueberry_muffin.ingredients.create(title: "Butter (softened)", quantity: ".5", unit: "cups")
+blueberry_muffin.ingredients.create(title: "Sugar", quantity: "1.25", unit: "cups")
+blueberry_muffin.ingredients.create(title: "Egg", quantity: "2", unit: "Large")
+blueberry_muffin.ingredients.create(title: "Vanilla Extract", quantity: "1", unit: "teaspoons")
+blueberry_muffin.ingredients.create(title: "Flour", quantity: "2", unit: "cups")
+blueberry_muffin.ingredients.create(title: "Salt", quantity: ".5", unit: "teaspoons")
+blueberry_muffin.ingredients.create(title: "Baking Powder", quantity: "2", unit: "teaspoons")
+blueberry_muffin.ingredients.create(title: "Milk", quantity: ".5", unit: "cups")
+blueberry_muffin.ingredients.create(title: "Blueberries", quantity: "2", unit: "cups")
+blueberry_muffin.ingredients.create(title: "Sugar", quantity: "3", unit: "teaspoons")
+
+# image_1 = banana_bread.images.create(title: "Jerry")
+# blob_1 = "eyJfcmFpbHMiOnsibWVzc2FnZSI6IkJBaHBCZz09IiwiZXhwIjpudWxsLCJwdXIiOiJibG9iX2lkIn19--ed40020b1ecfc726be945d171b29316c2a683a20"
+# image_1.recipe_image.attach(blob_1)
