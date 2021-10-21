@@ -12,7 +12,7 @@ RSpec.describe 'Location PORO' do
 
     expect(x).to be_a(Location)
     expect(x.location).to eq("Denver,Co")
-    expect(x.elevation).to eq(1617)
+    expect(x.elevation).to eq(5305)
     expect(x.humidity).to eq(26)
     expect(x.state).to eq("CO")
     expect(x.city).to eq("Denver")

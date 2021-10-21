@@ -9,7 +9,7 @@ class Location
   def initialize(location, elevation, humidity, coord)
     @id = nil
     @location = location
-    @elevation = elevation
+    @elevation = (elevation * 3.28084).to_i
     @humidity = humidity
     @city = coord[:city]
     @state = coord[:state]
