@@ -3,11 +3,11 @@ class RecipeSerializer
   attributes :title, :description, :category, :cook_time
 
   attributes :ingredients do |object|
-    hash = {}
     object.ingredients.map do |ingredient|
+      hash = {}
       hash[ingredient.title] = "#{ingredient.quantity} #{ingredient.unit}"
+      hash
     end
-    hash
   end
 
   attributes :images do |object|
