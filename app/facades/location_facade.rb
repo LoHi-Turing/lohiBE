@@ -1,13 +1,13 @@
 class LocationFacade
   class << self
     def coordinates(location)
-      latLng = {}
+      lat_lng = {}
       result = LocationService.get_location(location)
-      latLng[:lat] = result[:locations][0][:latLng][:lat]
-      latLng[:lon] = result[:locations][0][:latLng][:lng]
-      latLng[:city] = result[:locations][0][:adminArea5]
-      latLng[:state] = result[:locations][0][:adminArea3]
-      latLng
+      lat_lng[:lat] = result[:locations][0][:latLng][:lat]
+      lat_lng[:lon] = result[:locations][0][:latLng][:lng]
+      lat_lng[:city] = result[:locations][0][:adminArea5]
+      lat_lng[:state] = result[:locations][0][:adminArea3]
+      lat_lng
     end
 
     def return_elements(params_location)
