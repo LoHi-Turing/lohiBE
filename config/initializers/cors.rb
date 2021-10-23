@@ -13,4 +13,11 @@ Rails.application.config.middleware.insert_before 0, Rack::Cors do
       headers: :any,
       methods: [:get, :post, :put, :patch, :delete, :options, :head]
   end
+  allow do
+    origins 'http://lohi.surge.sh/#/'
+
+    resource '*',
+      headers: :any,
+      methods: [:get, :post, :put, :patch, :delete, :options, :head]
+  end
 end
