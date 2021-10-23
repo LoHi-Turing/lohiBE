@@ -1,6 +1,5 @@
 class LocationFacade
   class << self
-
     def coordinates(location)
       latLng = {}
       result = LocationService.get_location(location)
