@@ -23,6 +23,7 @@ group :development, :test do
   gem 'faker'
   gem 'shoulda-matchers'
   gem 'travis'
+  gem 'standard'
 end
 
 group :development do
