@@ -12,7 +12,7 @@ class ElevationService
     end
 
     def parse_json(result)
-      formatted_result = JSON.parse(result.body, symbolize_names: true)[:results][0]
+      JSON.parse(result.body, symbolize_names: true)[:results][0]
     end
   end
 end

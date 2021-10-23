@@ -5,6 +5,13 @@ require File.expand_path('../config/environment', __dir__)
 abort("The Rails environment is running in production mode!") if Rails.env.production?
 require 'rspec/rails'
 
+require 'simplecov'
+SimpleCov.start do
+  add_filter 'spec/'
+  add_filter 'app/channels/'
+  add_filter 'app/jobs/'
+end
+
 begin
   ActiveRecord::Migration.maintain_test_schema!
 rescue ActiveRecord::PendingMigrationError => e
