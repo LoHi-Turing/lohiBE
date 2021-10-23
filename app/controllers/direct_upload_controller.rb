@@ -1,11 +1,11 @@
 class DirectUploadController < ApplicationController
-
   def create
     response = generate_direct_upload(blob_params)
     render json: response
   end
 
   private
+
   def blob_params
     params.require(:file).permit(:filename, :byte_size, :checksum, :content_type, metadata: {})
   end

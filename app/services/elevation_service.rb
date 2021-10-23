@@ -1,10 +1,8 @@
 class ElevationService
-
   class << self
-
     def get_elevation(lat, lng)
       result = conn.get("/api/v1/lookup?") do |req|
-        req.params['locations'] = "#{lat},#{lng}"
+        req.params["locations"] = "#{lat},#{lng}"
       end
       parse_json(result)
     end

@@ -1,5 +1,4 @@
 class Api::V1::ImagesController < ApplicationController
-
   def create
     blob = image_params[:blob]
     params = image_params.except(:blob)

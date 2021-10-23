@@ -1,10 +1,10 @@
 class Location
   attr_reader :id,
-              :location,
-              :elevation,
-              :humidity,
-              :city,
-              :state
+    :location,
+    :elevation,
+    :humidity,
+    :city,
+    :state
 
   def initialize(location, elevation, humidity, coord)
     @id = nil
