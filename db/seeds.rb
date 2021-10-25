@@ -122,4 +122,4 @@ brazilan_carrot_cake.ingredients.create(title: "Egg", quantity: "4", unit: "Larg
 brazilan_carrot_cake.ingredients.create(title: "Baking Powder", quantity: "1", unit: "tablespoon")
 brazilan_carrot_cake.ingredients.create(title: "Topper: Milk", quantity: "1.5", unit: "cups")
 brazilan_carrot_cake.ingredients.create(title: "Topper: Chocolate Powder", quantity: "1", unit: "cup")
-brazilan_carrot_cake.ingredients.create(title: "Corn Starch", quantity: ".5", unit: "cups")
+brazilan_carrot_cake.ingredients.create(title: "Topper: Corn Starch", quantity: ".5", unit: "cups")
