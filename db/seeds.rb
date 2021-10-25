@@ -123,20 +123,3 @@ brazilan_carrot_cake.ingredients.create(title: "Baking Powder", quantity: "1", u
 brazilan_carrot_cake.ingredients.create(title: "Topper: Milk", quantity: "1.5", unit: "cups")
 brazilan_carrot_cake.ingredients.create(title: "Topper: Chocolate Powder", quantity: "1", unit: "cup")
 brazilan_carrot_cake.ingredients.create(title: "Corn Starch", quantity: ".5", unit: "cups")
-
-
-# image_1 = blueberry_muffin.images.create(title: "bb muffin 1")
-# blob_1 = "eyJfcmFpbHMiOnsibWVzc2FnZSI6IkJBaHBCdz09IiwiZXhwIjpudWxsLCJwdXIiOiJibG9iX2lkIn19--5d7df1454ac2e950f75ca240e0a8c7b493c65e28"
-# image_1.recipe_image.attach(blob_1)
-#
-# image_2 = blueberry_muffin.images.create(title: "bb muffin 2")
-# blob_2 = "eyJfcmFpbHMiOnsibWVzc2FnZSI6IkJBaHBCdz09IiwiZXhwIjpudWxsLCJwdXIiOiJibG9iX2lkIn19--5d7df1454ac2e950f75ca240e0a8c7b493c65e28"
-# image_2.recipe_image.attach(blob_2)
-#
-# image_3 = blueberry_muffin.images.create(title: "bb muffin 3")
-# blob_3 = "eyJfcmFpbHMiOnsibWVzc2FnZSI6IkJBaHBDUT09IiwiZXhwIjpudWxsLCJwdXIiOiJibG9iX2lkIn19--705f55bca3cf18a0a95df23ee440412d31f27cba"
-# image_2.recipe_image.attach(blob_3)
-
-# image_1 = banana_ bread.images.create(title: "Jerry")
-# blob_1 = "eyJfcmFpbHMiOnsibWVzc2FnZSI6IkJBaHBCZz09IiwiZXhwIjpudWxsLCJwdXIiOiJibG9iX2lkIn19--ed40020b1ecfc726be945d171b29316c2a683a20"
-# image_1.recipe_image.attach(blob_1)
