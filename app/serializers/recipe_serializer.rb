@@ -13,8 +13,9 @@ class RecipeSerializer
   attributes :images do |object|
     object.images.map do |image|
       hash = {}
-      hash[:author] = image.title 
+      hash[:author] = image.title
       hash[:url] = image.recipe_image_url
+      hash
     end
   end
 end

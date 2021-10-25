@@ -15,6 +15,7 @@ class RecipeHighSerializer
       hash = {}
       hash[:author] = image.title
       hash[:url] = image.recipe_image_url
+      hash
     end
   end
 end
