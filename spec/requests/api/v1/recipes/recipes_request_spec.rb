@@ -10,7 +10,6 @@ describe 'recipes' do
       expect(response).to be_successful
 
       recipes = JSON.parse(response.body, symbolize_names: true)[:data]
-
       recipes.each do |recipe|
         expect(recipe).to be_a(Hash)
         expect(recipe).to have_key(:id)
@@ -28,6 +27,8 @@ describe 'recipes' do
         expect(recipe[:attributes][:cook_time]).to be_a(String)
         expect(recipe[:attributes]).to have_key(:ingredients)
         expect(recipe[:attributes][:ingredients]).to be_a(Array)
+        expect(recipe[:attributes]).to have_key(:images)
+        expect(recipe[:attributes][:images]).to be_a(Array)
       end
     end
 
@@ -57,6 +58,8 @@ describe 'recipes' do
         expect(recipe[:attributes][:cook_time]).to be_a(String)
         expect(recipe[:attributes]).to have_key(:ingredients)
         expect(recipe[:attributes][:ingredients]).to be_a(Array)
+        expect(recipe[:attributes]).to have_key(:images)
+        expect(recipe[:attributes][:images]).to be_a(Array)
       end
     end
   end
