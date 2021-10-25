@@ -9,4 +9,10 @@ class RecipeHighSerializer
       hash
     end
   end
+
+  attributes :images do |object|
+    object.images.map do |image|
+      image.recipe_image_url
+    end
+  end
 end
