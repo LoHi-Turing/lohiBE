@@ -12,7 +12,7 @@ class Ingredient < ApplicationRecord
   end
 
   def adjusted_leavening(ingredient)
-    reduction = ingredient.quantity.to_f - (ingredient.quantity.to_i * 0.125)
+    reduction = ingredient.quantity.to_f - (ingredient.quantity.to_f.round * 0.125)
     ingredient.quantity = reduction.to_r.divmod(1).split(",").join(" ").to_s
     ingredient.quantity.delete_prefix("0 ")
   end

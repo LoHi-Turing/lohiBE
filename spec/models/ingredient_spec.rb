@@ -11,4 +11,33 @@ RSpec.describe Ingredient do
   describe 'relationships' do
     it { should belong_to(:recipe) }
   end
+
+  describe '::instance methods' do
+    context 'Recipes for high elevation' do
+      it 'can adjust amount of sugar' do
+        sugar = Ingredient.create(title: "sugar", quantity: "1", unit: "cup", recipe_id: Recipe.first.id)
+
+        result = sugar.adjusted_sugar(sugar)
+
+        expect(result).to eq("- 1.0 tablespoons")
+      end
+
+      it 'can adjust the amount of leavening' do
+        baking_powder = Ingredient.create(title:"Baking Powder", quantity: ".5", unit: "tablespoons", recipe_id: Recipe.first.id)
+
+        result = baking_powder.adjusted_leavening(baking_powder)
+
+        expect(result).to eq("3/8")
+      end
+
+      it 'can adjust the amount of flour' do
+        flour = Ingredient.create(title: "All-Purpose Flour", quantity: "2", unit: "cups", recipe_id: Recipe.first.id)
+
+        result = flour.adjusted_flour(flour)
+
+        expect(result).to eq("+ 2.0 tablespoons")
+      end
+    end
+  end
+
 end
