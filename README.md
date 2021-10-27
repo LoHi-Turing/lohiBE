@@ -177,19 +177,19 @@ Checkout the [Frontend Repo](https://github.com/LoHi-Turing/lo-hi) and [Deployed
 
 ## Contributors
 
-👤  <ins>**Joana Brito**
+<img src="https://avatars.githubusercontent.com/u/82066350?v=4" width="50" height="50"> <ins>**Joana Brito**
 - Github: [Joana Brito](https://github.com/joanafbrito)
 - LinkedIn: [Joana Brito](https://www.linkedin.com/in/joana-f-brito/)
 
-👤  <ins>**Jacob Martinez**
+<img src="https://avatars.githubusercontent.com/u/80134340?v=4" width="50" height="50"> <ins>**Jacob Martinez**
 - Github: [Jacob Martinez](https://github.com/Jacobmar13)
 - LinkedIn: [Jacob Martinez](https://www.linkedin.com/in/jacobadrianmartinez/)
 
-👤  <ins>**Megan McBride**
+<img src="https://avatars.githubusercontent.com/u/78767067?v=4" width="50" height="50"> <ins>**Megan McBride**
 - Github: [Megan McBride](https://github.com/Meggs625)
 - LinkedIn: [Megan McBride](https://www.linkedin.com/in/megan-d-mcbride/)
 
-<img src="https://avatars.githubusercontent.com/u/81197317?v=4"> <ins>**Jacob Piland**
+<img src="https://avatars.githubusercontent.com/u/81197317?v=4" width="50" height="50"> <ins>**Jacob Piland**
 - Github: [Jacob Piland](https://github.com/Jtpiland)
 - LinkedIn: [Jacob Piland](https://www.linkedin.com/in/jacob-piland/)
 
