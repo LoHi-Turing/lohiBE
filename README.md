@@ -189,7 +189,7 @@ Checkout the [Frontend Repo](https://github.com/LoHi-Turing/lo-hi) and [Deployed
 - Github: [Megan McBride](https://github.com/Meggs625)
 - LinkedIn: [Megan McBride](https://www.linkedin.com/in/megan-d-mcbride/)
 
-👤  <ins>**Jacob Piland**
+<img src="https://avatars.githubusercontent.com/u/81197317?v=4"> <ins>**Jacob Piland**
 - Github: [Jacob Piland](https://github.com/Jtpiland)
 - LinkedIn: [Jacob Piland](https://www.linkedin.com/in/jacob-piland/)
 
