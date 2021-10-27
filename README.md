@@ -174,6 +174,12 @@ Checkout the [Frontend Repo](https://github.com/LoHi-Turing/lo-hi) and [Deployed
   ```
 
   * From here you may access the [endpoints](https://github.com//LoHi-Turing/lohiBE/wiki/Endpoints) from a utility like `Postman`, neccesary for the `post` endpoints
+  
+### <ins>[Schema Design](https://dbdiagram.io)
+
+<p align="center">
+  <img src="https://user-images.githubusercontent.com/80134340/138570706-8421c6eb-8251-4aea-963f-06ba581ada3a.png"/>
+</p>
 
 ## Contributors
 
@@ -192,12 +198,6 @@ Checkout the [Frontend Repo](https://github.com/LoHi-Turing/lo-hi) and [Deployed
 <img src="https://avatars.githubusercontent.com/u/81197317?v=4" width="50" height="50"> <ins>**Jacob Piland**
 - Github: [Jacob Piland](https://github.com/Jtpiland)
 - LinkedIn: [Jacob Piland](https://www.linkedin.com/in/jacob-piland/)
-
-### <ins>[Schema Design](https://dbdiagram.io)
-
-<p align="center">
-  <img src="https://user-images.githubusercontent.com/80134340/138570706-8421c6eb-8251-4aea-963f-06ba581ada3a.png"/>
-</p>
 
 ![-----------------------------------------------------](https://raw.githubusercontent.com/andreasbm/readme/master/assets/lines/rainbow.png)
 
