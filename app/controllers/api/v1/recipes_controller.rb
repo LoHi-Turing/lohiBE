@@ -7,4 +7,15 @@ class Api::V1::RecipesController < ApplicationController
       render json: RecipeHighSerializer.new(recipes)
     end
   end
+
+  def create
+    recipe = Recipe.create(recipe_params)
+    render json: RecipeSerializer.new(recipe)
+  end
+
+  private
+
+  def recipe_params
+    params.permit(:title, :category, :cook_time, description: [])
+  end
 end
