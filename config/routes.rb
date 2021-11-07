@@ -6,7 +6,7 @@ Rails.application.routes.draw do
       resources :location, only: (:index)
       resources :recipes, only: [:index, :create]
       resources :images, only: (:create)
-      resources :users, only: (:create)
+      resources :users, only: [:create, :show]
     end
   end
 
