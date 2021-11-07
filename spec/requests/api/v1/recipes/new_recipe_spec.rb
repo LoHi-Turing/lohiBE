@@ -1,6 +1,6 @@
 require 'rails_helper'
 
-RSPec.describe 'New User Recipe' do
+RSpec.describe 'New User Recipe' do
   describe 'post request' do
     it 'can store a recipe in the database' do
 
