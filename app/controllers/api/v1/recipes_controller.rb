@@ -10,6 +10,11 @@ class Api::V1::RecipesController < ApplicationController
 
   def create
     recipe = Recipe.create(recipe_params)
+    if params[:ingredients]
+      params[:ingredients].each do |ingredient|
+        recipe.ingredients.create(title: ingredient[:title], quantity: ingredient[:quantity], unit: ingredient[:unit])
+      end
+    end
     render json: RecipeSerializer.new(recipe)
   end
 
