@@ -2,10 +2,10 @@ class RecipeHighSerializer
   include FastJsonapi::ObjectSerializer
   attributes :title, :description, :category, :cook_time
 
-  attributes :ingredients do |object|
+  attributes :ingredients do |object, params|
     object.ingredients.map do |ingredient|
       hash = {}
-      hash[ingredient.title] = HighElevationFacade.adjust_ingredient(ingredient)
+      hash[ingredient.title] = HighElevationFacade.adjust_ingredient(ingredient, params[:elevation])
       hash
     end
   end
