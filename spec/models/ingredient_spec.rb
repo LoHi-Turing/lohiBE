@@ -16,16 +16,18 @@ RSpec.describe Ingredient do
     context 'Recipes for high elevation' do
       it 'can adjust amount of sugar' do
         sugar = Ingredient.create(title: "sugar", quantity: "1", unit: "cup", recipe_id: Recipe.first.id)
+        elevation = 3500
 
-        result = sugar.adjusted_sugar(sugar)
+        result = sugar.adjusted_sugar(sugar, elevation)
 
         expect(result).to eq("- 1.0 tablespoons")
       end
 
       it 'can adjust the amount of leavening' do
         baking_powder = Ingredient.create(title:"Baking Powder", quantity: ".5", unit: "tablespoons", recipe_id: Recipe.first.id)
+        elevation = 3500
 
-        result = baking_powder.adjusted_leavening(baking_powder)
+        result = baking_powder.adjusted_leavening(baking_powder, elevation)
 
         expect(result).to eq("3/8")
       end
